@@ -1,6 +1,6 @@
 {
   "name": "hapi-monit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hapi plugin for passing monit health checks",
   "main": "index.js",
   "scripts": {
