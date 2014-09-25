@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/bendrucker/hapi-monit/issues"
   },
-  "homepage": "https://github.com/bendrucker/hapi-monit"
+  "homepage": "https://github.com/bendrucker/hapi-monit",
+  "devDependencies": {
+    "chai": "1",
+    "hapi": "6",
+    "inject-then": "1"
+  }
 }
