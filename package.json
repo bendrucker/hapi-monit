@@ -25,6 +25,7 @@
   "devDependencies": {
     "chai": "1",
     "hapi": "6",
-    "inject-then": "1"
+    "inject-then": "1",
+    "mocha": "1"
   }
 }
