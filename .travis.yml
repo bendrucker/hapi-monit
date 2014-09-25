@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: bvdrucker@gmail.com
+  api_key:
+    secure: NrDpmDMai+ZqTlDo2Y1MwDtHUeLLxRZ5AGes0LSy+pyz9ieMLehuJm9LoSdz0M9b2NgXwLY98OuKso/QvJeX2Zgwy0cZjCQZ3SbzpUh6WIPtQwyFfm9DPKK/t4W6Nf5/JtFCIeSv42qkx2FA9HcoyG/kKxI6jdmKWZYr6gxufe8=
+  on:
+    tags: true
+    all_branches: true
+    repo: bendrucker/hapi-monit
