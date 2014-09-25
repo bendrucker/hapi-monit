@@ -1,0 +1,25 @@
+{
+  "name": "hapi-monit",
+  "version": "1.0.0",
+  "description": "Hapi plugin for passing monit health checks",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bendrucker/hapi-monit.git"
+  },
+  "keywords": [
+    "hapi",
+    "monit",
+    "opsworks",
+    "health"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/hapi-monit/issues"
+  },
+  "homepage": "https://github.com/bendrucker/hapi-monit"
+}
