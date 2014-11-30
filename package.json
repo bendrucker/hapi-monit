@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/bendrucker/hapi-monit",
   "devDependencies": {
-    "chai": "1",
-    "hapi": "7",
-    "inject-then": "1",
-    "mocha": "1"
+    "chai": "~1.10.0",
+    "hapi": "~7.5.2",
+    "inject-then": "~1.1.0",
+    "mocha": "~2.0.1"
   },
   "peerDependencies": {
     "hapi": "6 || 7"
