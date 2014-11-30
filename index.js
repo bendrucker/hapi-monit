@@ -1,12 +1,12 @@
 'use strict';
 
-exports.register = function (plugin, options, next) {
-  plugin.ext('onRequest', function (request, next) {
+exports.register = function (server, options, next) {
+  server.ext('onRequest', function (request, reply) {
     if (/^monit\//.test(request.headers['user-agent'])) {
-      next('OK');
+      reply();
     }
     else {
-      next();
+      reply.continue();
     }
   });
   next();
