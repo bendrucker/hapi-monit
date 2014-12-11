@@ -6,6 +6,7 @@ var hapi   = require('hapi');
 describe('hapi-monit', function () {
 
   var server = new hapi.Server();
+  server.connection();
   server.route({
     method: 'get',
     path: '/',
@@ -14,7 +15,7 @@ describe('hapi-monit', function () {
     }
   });
   before(function (done) {
-    server.pack.register([require('./'), require('inject-then')], done);
+    server.register([require('./'), require('inject-then')], done);
   });
 
   it('sends a 200 response to monit', function () {
@@ -27,7 +28,7 @@ describe('hapi-monit', function () {
     })
     .then(function (response) {
       expect(response.statusCode).to.equal(200);
-      expect(response.payload).to.equal('OK');
+      expect(response.payload).to.be.empty;
     });
   });
 
